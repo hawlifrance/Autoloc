@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+       
+        
+        <title>product</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+  
+
+
+        <link rel="stylesheet" href="sty.css">
+        
+       
+       <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+
+<body>
+  <nav class="navbar">
+   
+            <div class="navbar-container">
+                   
+      <input type="text" class="search-input" placeholder=" Rechercher...">
+            </div>
+                    <img src="looo.jpg"  alt="H&F"  class="logo">
+                    
+          <div class="nav-item-container">
+                    <ul class="nav-list">
+             <li> <a class="nav-link"  href="index.html" >Home</a></li>
+     <li> <a class="nav-link" href="SHOP.html" >SHOP</a></li>
+                <li> <a class="nav-link" href="blog.html" >Blog</a></li>
+              
+                  
+                   <li> <a class="nav-link"href="CONTACT US.HTML">Contact Us</a></li>
+                    </ul>
+          </div>
+</nav>
+   <section class="product-section">
+    <div class="container">
+      <div class="left">
+        <img 
+          src="img/shop/1.jpg"
+          alt="Main Product Image"
+          id="mainImage"
+          class="main-image"
+        />
+        <div class="thumbnails">
+          <img
+            src="img/shop/1.jpg"
+            alt="Thumbnail 1"
+            onclick="changeImage(this)"
+            class="active"
+          />
+          <img src="img/shop/24.jpg" alt="Thumbnail 2" onclick="changeImage(this)" />
+          <img src="img/shop/25.jpg" alt="Thumbnail 3" onclick="changeImage(this)" />
+          <img src="img/shop/26.jpg" alt="Thumbnail 4" onclick="changeImage(this)" />
+        </div>
+      </div>
+      <div class="right">
+        <h6>Home / T-Shirt</h6>
+        <h2>Men's Fashion T-Shirt</h2>
+        <p class="price">$139.00</p>
+
+        <label for="size-select">Select Size:</label>
+        <select id="size-select" name="size">
+          <option value="">Choose a size</option>
+          <option value="XXL">XXL</option>
+          <option value="XX">XX</option>
+          <option value="X">X</option>
+          <option value="L">L</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1" />
+
+        <button onclickid="addToCartBtn()">Add to Cart</button>
+
+        <h3>Product Details:</h3>
+        <p>
+          The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq.
+          yd. fabric constructed from 100% cotton. This classic fit preshrunk jersey
+          knit provides unmatched comfort with each wear.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ 
+   
+  
+   <section id="featured" class="my-5 pb-5">
+  <div class="text-center mt-5 py-5">
+    <h3>Our Featured</h3>
+    <hr class="mx-auto">
+    <p>Check out our latest featured products with great prices.</p>
+  </div>
+
+  <div class="featured-grid">
+    <div class="product">
+      <a href="SHOP.html">
+      <img src="img/shop/1.jpg" alt="">
+      </a>
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Sport Boots</h5>
+      <h4 class="p-price">$93.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product">
+      <a href="google.com">
+      <img src="img/featured/2.jpg" alt="">
+      </a>
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i>
+      </div>
+      <h5 class="p-name">Running Shoes</h5>
+      <h4 class="p-price">$89.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product">
+      <img src="img/featured/3.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+      </div>
+      <h5 class="p-name">Sneakers</h5>
+      <h4 class="p-price">$75.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product">
+      <img src="img/featured/4.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i>
+      </div>
+      <h5 class="p-name">Hiking Boots</h5>
+      <h4 class="p-price">$120.00</h4>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</section>
+ 
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-columns">
+
+      <div class="footer-col logo-col">
+         <img src="looo.jpg"  alt="H&F"  class="logo2">
+        
+        <p>
+          Fringilla urna porttitor rhoncus dolor purus luctus venenatis luctus venenatis lectus magna fringilla diam maecenas ultricies mi eget mauris.
+        </p>
+      </div>
+
+      <div class="footer-col featured-col">
+        <h5>Featured</h5>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Boys</a></li>
+          <li><a href="#">Girls</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Clothes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h5>Contact Us</h5>
+        <h6>Address</h6>
+        <p>212 STREET NAME, CITY, US</p>
+        <h6>Phone</h6>
+        <p>(222) 206885</p>
+        <h6>Email</h6>
+        <p>H&F@gmail.com</p>
+      </div>
+
+      <div class="footer-col instagram-col">
+        <h5>Instagram</h5>
+        <div class="instagram-images">
+          <img src="img/insta/1.jpg" alt="Instagram 1">
+          <img src="img/insta/2.jpg" alt="Instagram 2">
+          <img src="img/insta/3.jpg" alt="Instagram 3">
+          <img src="img/insta/4.jpg" alt="Instagram 4">
+          <img src="img/insta/5.jpg" alt="Instagram 5">
+          <img src="img/insta/6.jpg" alt="Instagram 6">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="payment-bar">
+      <img src="img/payment.png" alt="Payment Methods">
+    </div>
+
+    <div class="footer-bottom">
+      <p>H&F ecommerce © 2025. All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+<script>
+function addToCart() {
+  // هنا يمكنك إضافة منطق حفظ المنتج في السلة إذا تريد
+  showPopup();
+}
+
+function showPopup() {
+  const popup = document.getElementById('cartPopup');
+  popup.style.display = 'block';
+
+  // إخفاء النافذة تلقائياً بعد 3 ثواني
+  setTimeout(() => {
+    popup.style.display = 'none';
+  }, 3000);
+}
+
+function closePopup() {
+  document.getElementById('cartPopup').style.display = 'none';
+}
+
+</script>
+
+<script>
+  function changeImage(imgElement) {
+    // هذا الكود يغير صورة العرض الرئيسية عند الضغط على صورة مصغّرة
+    var mainImage = document.getElementById("mainImage");
+    mainImage.src = imgElement.src;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+
+                      
+                
+
